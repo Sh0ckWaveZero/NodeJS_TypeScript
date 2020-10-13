@@ -1,4 +1,4 @@
-# NodeJS_TypeScript
+# nodeJS_typescript
 How to Setup a TypeScript + Node.js Project 🍺
 
 ### install dependency

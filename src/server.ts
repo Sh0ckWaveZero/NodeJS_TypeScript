@@ -1,9 +1,10 @@
 import express from 'express'
 
 const app = express()
+const PORT = 3333
 
-app.get('/', (req, res) => res.json({ hell0: 'world' }))
+app.get('/', (req, res) => res.json({ message: 'Everyone calls me handsome' }))
 
-app.listen(3333, () => {
-  console.log('Server start: listening at http://localhost:3333')
+app.listen(PORT, () => {
+  console.log(`🛸[server]: Server is running at https://localhost:${PORT}`)
 })
