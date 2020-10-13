@@ -1,7 +1,7 @@
 import { User } from '@models/User'
 
 export class UserController {
-  teste () {
+  teste() {
     const user = new User()
     user.name = 'na'
   }
