@@ -8,7 +8,7 @@
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/server.js",
     "dev": "ts-node-dev -r ts-node/register -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -18,6 +18,7 @@
     "@babel/preset-typescript": "^7.10.1",
     "@types/express": "^4.17.6",
     "@types/jest": "^26.0.0",
+    "@types/mongodb": "^3.5.27",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
     "babel-plugin-module-resolver": "^4.0.0",
@@ -37,6 +38,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2"
   }
 }
